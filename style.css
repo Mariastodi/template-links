@@ -92,7 +92,8 @@ h1 {
 }
 
 .apple-btn {
-    display: flex;
+    display: grid;
+    grid-template-columns: 24px 108px;
     align-items: center;
     background: rgba(255, 255, 255, 0.055);
     color: white;
@@ -103,16 +104,32 @@ h1 {
     border-radius: 18px;
     justify-content: center;
     gap: 12px;
+    text-align: left;
     font-size: .95rem;
     font-weight: 600;
     transition: transform .25s ease, background .25s ease, border-color .25s ease, box-shadow .25s ease;
 }
 
 .apple-btn i {
-    width: 22px;
+    width: 24px;
     color: #cfdded;
-    font-size: 1.1rem;
     text-align: center;
+}
+
+.links .apple-btn:nth-child(1) i {
+    font-size: 1rem;
+}
+
+.links .apple-btn:nth-child(2) i {
+    font-size: 1.1rem;
+}
+
+.links .apple-btn:nth-child(3) i {
+    font-size: 1.2rem;
+}
+
+.links .apple-btn:nth-child(4) i {
+    font-size: 1.3rem;
 }
 
 .apple-btn:hover, .apple-btn:focus-visible {
